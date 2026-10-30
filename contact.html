@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vintage Restaurant - Book Table</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="logo">VINTAGE RESTAURANT</div>
+    <button class="menu-btn" onclick="toggleMenu()">☰ Menu</button>
+    <nav id="nav-links">
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html" class="active">Book Table</a>
+      <button class="theme-btn" onclick="toggleDarkMode()">Dark Mode</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="content-box">
+      <h1>Book a Table</h1>
+      <p>Fill out the form below to reserve your table.</p>
+
+      <!-- 8 different input types with labels and HTML5 validation -->
+      <form id="bookingForm" onsubmit="return checkForm()">
+        
+        <label for="userName">1. Full Name:</label>
+        <input type="text" id="userName" name="userName" required minlength="3" placeholder="Enter your name">
+
+        <label for="userEmail">2. Email Address:</label>
+        <input type="email" id="userEmail" name="userEmail" required placeholder="example@mail.com">
+
+        <label for="userPhone">3. Phone Number (10 digits):</label>
+        <input type="tel" id="userPhone" name="userPhone" required pattern="[0-9]{10}" placeholder="9876543210">
+
+        <label for="visitDate">4. Date of Visit:</label>
+        <input type="date" id="visitDate" name="visitDate" required>
+
+        <label for="guestCount">5. Number of Guests (1 to 15):</label>
+        <input type="number" id="guestCount" name="guestCount" required min="1" max="15" value="2">
+
+        <label for="mealTime">6. Select Time Slot:</label>
+        <select id="mealTime" name="mealTime" required>
+          <option value="">-- Choose Time --</option>
+          <option value="1:00 PM">1:00 PM (Lunch)</option>
+          <option value="8:00 PM">8:00 PM (Dinner)</option>
+          <option value="9:30 PM">9:30 PM (Dinner)</option>
+        </select>
+
+        <p><strong>7. Seating Area:</strong></p>
+        <input type="radio" id="acHall" name="seating" value="AC Hall" checked>
+        <label for="acHall" class="inline-label">Indoor AC Hall</label>
+        <input type="radio" id="booth" name="seating" value="Family Booth">
+        <label for="booth" class="inline-label">Family Booth</label>
+
+        <p><strong>8. Extra Requirements:</strong></p>
+        <input type="checkbox" id="jain" name="extra" value="Jain Food">
+        <label for="jain" class="inline-label">Jain Food</label>
+        <input type="checkbox" id="chair" name="extra" value="Baby Chair">
+        <label for="chair" class="inline-label">Baby High Chair</label>
+
+        <label for="requests">9. Special Notes:</label>
+        <textarea id="requests" name="requests" rows="3" placeholder="Any food allergies or birthday cake request?"></textarea>
+
+        <p id="errorMsg" class="error-text"></p>
+        <button type="submit" class="btn">Submit Booking</button>
+      </form>
+    </section>
+
+    <section class="content-box">
+      <h2>Our Location in Pune</h2>
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3781.564689412516!2d73.7654563!3d18.5936541!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2b96000000001%3A0x123456789abcdef!2sWakad%2C%20Pune!5e0!3m2!1sen!2sin!4v1700000000000" 
+        width="100%" 
+        height="300" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy"
+        title="Google Map of Vintage Restaurant Pune">
+      </iframe>
+    </section>
+  </main>
+
+  <button id="topBtn" onclick="goToTop()">↑ Top</button>
+
+  <footer>
+    <p><strong>Vintage Restaurant</strong> | Wakad, Pune, Maharashtra</p>
+    <p>Open Daily: 11:00 AM - 11:30 PM | Phone: +91 98765 43210</p>
+    <p>&copy; 2026 Vintage Restaurant</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

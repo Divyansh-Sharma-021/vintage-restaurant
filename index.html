@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vintage Restaurant - Home</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="logo">VINTAGE RESTAURANT</div>
+    <button class="menu-btn" onclick="toggleMenu()">☰ Menu</button>
+    <nav id="nav-links">
+      <a href="index.html" class="active">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Book Table</a>
+      <button class="theme-btn" onclick="toggleDarkMode()">Dark Mode</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1000" alt="Vintage Restaurant dining room with wooden tables">
+      <h1>Welcome to Vintage Restaurant</h1>
+      <p>Authentic North Indian, Tandoor, and Asian food in Pune.</p>
+      <a href="contact.html" class="btn">Book a Table</a>
+    </section>
+
+    <section class="highlights">
+      <h2>Our Specialties</h2>
+      <div class="card-box">
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=500" alt="Paneer curry and garlic naan">
+          <h3>Tandoor & Curries</h3>
+          <p>Freshly baked clay-oven rotis, smoky kababs, and rich North Indian gravies.</p>
+        </article>
+
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=500" alt="Asian stir fry starter">
+          <h3>Pan-Asian Starters</h3>
+          <p>Crispy lotus stem, spicy noodles, and classic Manchurian dishes.</p>
+        </article>
+
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=500" alt="Family dining area at Vintage Restaurant">
+          <h3>Family Dining</h3>
+          <p>Comfortable indoor seating perfect for family dinners and birthday parties.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <button id="topBtn" onclick="goToTop()">↑ Top</button>
+
+  <footer>
+    <p><strong>Vintage Restaurant</strong> | Wakad, Pune, Maharashtra</p>
+    <p>Open Daily: 11:00 AM - 11:30 PM | Phone: +91 98765 43210</p>
+    <p>&copy; 2026 Vintage Restaurant</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vintage Restaurant - Gallery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="logo">VINTAGE RESTAURANT</div>
+    <button class="menu-btn" onclick="toggleMenu()">☰ Menu</button>
+    <nav id="nav-links">
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="gallery.html" class="active">Gallery</a>
+      <a href="contact.html">Book Table</a>
+      <button class="theme-btn" onclick="toggleDarkMode()">Dark Mode</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="content-box">
+      <h1>Photo Gallery</h1>
+      <p>Click on any image to view it bigger.</p>
+
+      <div class="gallery-box">
+        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=600" alt="Main indoor seating area" onclick="openLightbox(this.src)">
+        <img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=600" alt="Sizzling tandoori starter platter" onclick="openLightbox(this.src)">
+        <img src="https://images.unsplash.com/photo-1631452180519-c014fe946bc7?w=600" alt="Bowl of fresh Paneer Lababdar" onclick="openLightbox(this.src)">
+        <img src="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?w=600" alt="Matka Dum Biryani served with raita" onclick="openLightbox(this.src)">
+        <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?w=600" alt="Warm wooden booth tables" onclick="openLightbox(this.src)">
+        <img src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?w=600" alt="Fresh fruit mocktails on the counter" onclick="openLightbox(this.src)">
+      </div>
+
+      <!-- Simple Lightbox Popup -->
+      <div id="lightbox" onclick="closeLightbox()">
+        <p>Click anywhere to close</p>
+        <img id="big-img" src="" alt="Enlarged gallery view">
+      </div>
+    </section>
+
+    <section class="content-box">
+      <h2>Kitchen Promo Video</h2>
+      <video width="100%" controls>
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </section>
+  </main>
+
+  <button id="topBtn" onclick="goToTop()">↑ Top</button>
+
+  <footer>
+    <p><strong>Vintage Restaurant</strong> | Wakad, Pune, Maharashtra</p>
+    <p>Open Daily: 11:00 AM - 11:30 PM | Phone: +91 98765 43210</p>
+    <p>&copy; 2026 Vintage Restaurant</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

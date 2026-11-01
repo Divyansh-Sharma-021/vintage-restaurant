@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vintage Restaurant - Menu</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="logo">VINTAGE RESTAURANT</div>
+    <button class="menu-btn" onclick="toggleMenu()">☰ Menu</button>
+    <nav id="nav-links">
+      <a href="index.html">Home</a>
+      <a href="menu.html" class="active">Menu</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Book Table</a>
+      <button class="theme-btn" onclick="toggleDarkMode()">Dark Mode</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="content-box">
+      <h1>Our Food Menu</h1>
+      <p>Freshly prepared dishes made with traditional spices.</p>
+      <button class="btn print-btn" onclick="window.print()">Print Menu</button>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Category</th>
+            <th>Dish Name</th>
+            <th>Description</th>
+            <th>Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td rowspan="3">Starters</td>
+            <td>Paneer Matka Kabab</td>
+            <td>Grilled cottage cheese cubes cooked with yogurt and spices in a clay pot.</td>
+            <td>Rs. 380</td>
+          </tr>
+          <tr>
+            <td>Lotus Stem Stir Fry</td>
+            <td>Crispy fried lotus stem tossed in sweet and spicy honey chilli sauce.</td>
+            <td>Rs. 399</td>
+          </tr>
+          <tr>
+            <td>Tandoori Soya Chaap</td>
+            <td>Soya chaap marinated in red tandoori masala and roasted in a clay oven.</td>
+            <td>Rs. 219</td>
+          </tr>
+          <tr>
+            <td rowspan="3">Main Course</td>
+            <td>Paneer Lababdar Masala</td>
+            <td>Soft paneer cubes in a rich tomato, cashew, and cream gravy.</td>
+            <td>Rs. 420</td>
+          </tr>
+          <tr>
+            <td>Veg Tawa Bhuna</td>
+            <td>Mixed vegetables and kofta cooked on a hot iron tawa with thick masala.</td>
+            <td>Rs. 390</td>
+          </tr>
+          <tr>
+            <td>Special Matka Dum Biryani</td>
+            <td>Fragrant basmati rice and spiced vegetables slow-cooked in an earthen pot.</td>
+            <td>Rs. 380</td>
+          </tr>
+          <tr>
+            <td colspan="3"><strong>Special Family Thali Combo</strong> (Paneer Gravy + Dal Fry + 2 Butter Naan + Rice + Sweet)</td>
+            <td><strong>Rs. 309</strong></td>
+          </tr>
+          <tr>
+            <td>Desserts</td>
+            <td>Gulab Jamun with Rabdi</td>
+            <td>Two warm gulab jamuns served with chilled saffron rabdi.</td>
+            <td>Rs. 350</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <button id="topBtn" onclick="goToTop()">↑ Top</button>
+
+  <footer>
+    <p><strong>Vintage Restaurant</strong> | Wakad, Pune, Maharashtra</p>
+    <p>Open Daily: 11:00 AM - 11:30 PM | Phone: +91 98765 43210</p>
+    <p>&copy; 2026 Vintage Restaurant</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
